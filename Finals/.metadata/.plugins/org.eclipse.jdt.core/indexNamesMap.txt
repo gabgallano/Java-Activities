@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+file:/C:/Users/Gabriel/OneDrive%20-%20University%20of%20Perpetual%20Help%20System%20JONELTA/First%20Year/Second%20Semester/xCODESx/Java/Finals/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index
+meta_index

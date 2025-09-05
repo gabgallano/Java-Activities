@@ -1,0 +1,59 @@
+import javax.swing.ImageIcon;
+import java.awt.event.*;
+import java.awt.Font;
+import java.awt.Image;
+
+import javax.swing.*;
+public class FinalProject{
+    public static void main (String[] args){
+        JFrame f = new JFrame ("Learning the Alphabet");
+        JLabel a1 = new JLabel("");
+        a1.setBounds (150,70, 150,130);
+        f.getContentPane().add(a1);
+        JTextField a2 = new JTextField(6);
+        a2.setBounds (302,70, 150,130);
+        a2.setFont(new Font("Serif", Font.BOLD, 20));
+        JTextField a3 = new JTextField(6);
+        a3.setBounds (454,70, 150,130);
+
+        f.add(a2); f.add(a3);
+        
+        ImageIcon A = new ImageIcon("/A.png");
+
+    JButton a = new JButton ("Aa");
+    a.setFont(new Font("Serif", Font.BOLD, 30));
+    a.setBounds (50,230,120,100);
+    a.addActionListener (new ActionListener(){
+        public void actionPerformed (ActionEvent e){
+            a2.setText ("A is for Apple");
+            a1.setIcon(A);
+            
+                }        
+            });
+    JButton b = new JButton ("Bb");
+    b.setFont(new Font("Serif", Font.BOLD, 30));
+    b.setBounds (172,230,120,100);
+    b.addActionListener (new ActionListener(){
+        public void actionPerformed (ActionEvent e){
+            a2.setText ("B is for Butterfly");
+                }        
+            });  
+    JButton c = new JButton ("Cc");
+    c.setFont(new Font("Serif", Font.BOLD, 30));
+    c.setBounds (294,230,120,100);
+    c.addActionListener (new ActionListener(){
+        public void actionPerformed (ActionEvent e){
+            a2.setText ("C is for ");
+                }        
+            });              
+
+                    
+
+        f.add(a);
+        f.add(b);
+        f.add(c);
+        f.setSize (800,600);
+        f.setLayout (null);
+        f.setVisible (true);
+    }
+}
